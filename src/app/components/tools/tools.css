@@ -1,0 +1,14 @@
+.my-head{
+    position: relative;
+    padding: 0px 10px 10px 10px;
+}
+.my-head::after{
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+background-color: rgb(0, 0, 0);
+width: 50px;
+height: 2px;
+}

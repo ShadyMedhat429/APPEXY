@@ -1,0 +1,26 @@
+<section class=" min-h-fit">
+    <div class="container dark:bg-black mx-auto flex flex-col justify-center items-center py-5"> 
+        <div class="text-center py-3 dark:text-white">
+            <h2 class="text-5xl py-2">Contact Us</h2>
+            <p class="py-3">We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
+        <div class="w-full md:w-full lg:w-1/2 shadow shadow-black/50 dark:bg-white dark:shadow-white/50  py-5 rounded-md h-full">
+        <div class=" px-3 py-2">
+            <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 ">Your Name</label>
+            <input [(ngModel)]="Text" type="text" placeholder="Enter Your Name" id="large-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 px-5   dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class=" px-3 py-2">
+            <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 ">Email Address</label>
+            <input [(ngModel)]="Text2" type="email" placeholder="Enter Your Email" id="large-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 px-5   dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class=" px-3 py-2">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
+            <textarea  [(ngModel)]="Text3" id="message" rows="4" class="block p-2.5 px-5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500    dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write Your Message Here..."></textarea>
+        </div>
+        <div class="text-center py-4">
+            <button (click)="clickReset()" class=" bg-green-700 py-2 px-5 text-white rounded">Send Message</button>
+        </div>
+        </div>
+    </div>
+</section>
+<app-footer />
